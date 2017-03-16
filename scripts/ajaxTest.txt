@@ -1,3 +1,0 @@
-joe,joe@joe.com.psswdjoe
-sam,sam@sam.com.pswdsam
-pierce,pierce@here.com,fuck
