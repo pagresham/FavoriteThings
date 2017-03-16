@@ -1,0 +1,299 @@
+/* Sticky Footer Styles */
+body, html, div .page {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+body {
+  background-color: #ccc;
+  margin: auto; }
+
+a {
+  text-decoration: none;
+  color: #5E7362; }
+
+a:hover {
+  text-decoration: none;
+  color: black; }
+
+li:disabled a {
+  color: black; }
+
+.disabled > a, .navbar-default .navbar-nav > .disabled > a:hover {
+  color: black; }
+
+.page {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto; }
+
+.content {
+  margin: 1em 0; }
+
+.content-top-row div {
+  margin-bottom: 1em; }
+
+.music, .fishing, .family {
+  min-height: 200px;
+  margin-bottom: 2em; }
+
+h4 {
+  font-weight: bold; }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto; }
+
+#jumbo-img-ind {
+  background-image: url("../img/columbines-w960.JPG");
+  background-size: cover;
+  background-position: 20% 30%; }
+
+.j1 {
+  max-height: 200px; }
+
+#yellow {
+  color: yellow; }
+
+.sans {
+  font-family: sans-serif; }
+
+.footer-up {
+  border: none;
+  background-color: transparent;
+  box-shadow: none; }
+
+.glyph-space-right {
+  margin-right: .5em; }
+
+.glyph-space-left {
+  margin-left: .5em; }
+
+.active2 {
+  font-weight: 900; }
+
+.white {
+  color: white;
+  text-decoration: none; }
+
+.white:hover {
+  text-decoration: none;
+  color: white; }
+
+.navbar {
+  background-color: #222;
+  background: linear-gradient(#222, #555); }
+
+.bot-nav {
+  background-color: #222;
+  background: linear-gradient(#555, #222);
+  margin-bottom: 0; }
+
+.hov-green li:hover {
+  background-color: #7d9b82;
+  animation: fade-to-green .5s 1; }
+
+@keyframes fade-to-green {
+  from {
+    background-color: #222;
+    background: linear-gradient(#222, #555); }
+  to {
+    background-color: #7d9b82; } }
+.footer-up {
+  position: absolute; }
+
+.footer-up li {
+  position: relative;
+  left: 130px;
+  top: 55px;
+  float: right; }
+
+.footer-up li a:hover {
+  background-color: transparent; }
+
+#brand {
+  color: #7d9b82; }
+
+.btn-green {
+  background-color: #7d9b82; }
+
+#white-btn {
+  color: white;
+  background-color: #7d9b82; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .footer-up {
+    text-align: center; }
+
+  .footer-up li {
+    left: 0;
+    top: 0;
+    float: none; }
+
+  .small-center {
+    text-align: center; }
+    .small-center a {
+      dislplay: block;
+      margin: auto; } }
+.center {
+  text-align: center;
+  margin: auto; }
+
+.trout-header {
+  padding: 1em 3em;
+  background-color: rgba(64, 191, 85, 0.25); }
+
+.ind-fiddle-desc,
+.ind-fishing-desc,
+.ind-fam-desc,
+.stone-info {
+  max-width: 20em;
+  padding-top: 1em;
+  font-weight: bold; }
+
+.music {
+  background-image: url("../img/drews-fiddles-trans.jpg");
+  background-position: center;
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  margin-top: 1em; }
+
+iframe {
+  max-width: 100%; }
+
+.see-more {
+  margin-top: 2em; }
+
+.fish-img {
+  display: none; }
+
+.fishing {
+  background-image: url("../img/coal-creek-trans.jpg");
+  background-position: center -120px;
+  background-repeat: no-repeat;
+  margin-top: 1em; }
+
+.ind-fam-info {
+  min-height: 10em;
+  background-image: url("../img/fam-img-trans.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 350px; }
+
+#ind-fish-show,
+#ind-fid-show,
+#ind-fam-show {
+  margin-top: 2em; }
+
+.family {
+  background-image: url("../img/sage-snowman-trans.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1em; }
+
+.hid-content {
+  clear: both; }
+
+.clearfix {
+  clear: both;
+  margin-bottom: .5em; }
+
+#nav-trout {
+  display: block;
+  margin-top: .25em; }
+
+.tr-jumbo {
+  background-image: url("../img/jumbo-trout.jpg");
+  background-position: center;
+  max-width: 960px;
+  margin: auto; }
+
+.thumbnail, .thumbnail-bug {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  border: none; }
+
+.thumbnail-bug {
+  min-height: 20em;
+  margin: auto; }
+
+.thumbnail-bug img {
+  margin: auto; }
+
+.species {
+  padding: 0 3em; }
+
+.habitat {
+  padding: 0 3em; }
+
+.habitat-btn {
+  margin: .5em 0; }
+
+.map {
+  margin: 1.5em 0 1em 0;
+  height: 30em;
+  background-color: grey; }
+
+#map {
+  height: 30em;
+  margin-bottom: 1em; }
+
+.tab {
+  width: 4em;
+  height: .85em;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 0 0 0.5em 0.5em;
+  background-color: #555; }
+
+.insect-info {
+  display: none;
+  max-width: 20em; }
+
+.space {
+  padding-bottom: 2em; }
+
+.trl-bot {
+  margin-bottom: 1em; }
+
+.trl-top {
+  min-height: 4em; }
+  .trl-top h2 {
+    margin: 0;
+    padding: 0; }
+
+.trl-hid {
+  display: none; }
+
+.flying-fish {
+  position: relative;
+  transform: rotateY(0deg);
+  left: -100%;
+  z-index: 1; }
+
+.fly {
+  animation: fly 4s 1; }
+
+@keyframes fly {
+  0% {
+    left: -100%;
+    transform: rotateY(0deg); }
+  40% {
+    transform: rotateY(0deg); }
+  50% {
+    left: 200%;
+    transform: rotateY(180deg); }
+  90% {
+    transform: rotateY(180deg); }
+  100% {
+    left: -100%;
+    transform: rotateY(0deg); } }
+.bottom {
+  min-height: 23em;
+  background-color: #bbb; }
+
+
