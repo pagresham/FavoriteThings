@@ -133,7 +133,7 @@ include "header.php";
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row sectionl">
     <div class="col-sm-4 space">
       <div class="center species">
         <!-- fish food header -->
@@ -228,10 +228,3 @@ include "footer.php";
 include "register-modal.php";
 include "login-modal.php";
 ?>
-
-		</div>
-	</nav> --><!-- 
-</footer>
-</div>
-</body>
-</html> -->

@@ -53,14 +53,14 @@ include "header.php";
 <div class="container">
   <div class="row content-top-row">
       <div class="row">
-        <div class="center col-md-2">
+        <div class="center col-md-2 top-img">
           <img src="img/fiddle-banjo-small.png" alt="Banjo Image" width="90px">
         </div>
         <div class="trout-header col-md-8">
           <h3 class="center">Hi Friends!</h3>
           <p>Have a look around. Inside are some photos, music, maps, and links  relating to some of my favorite things. It's not all raindrops and roses... but there may be a few. If you're interested in the additional content, or just want to look around, create an account, log in, and enjoy!</p>
         </div>
-        <div class="center col-md-2">
+        <div class="center col-md-2 top-img">
           <img src="img/trout2a.png" alt="Trout Image" width="90px">
         </div>
       </div>

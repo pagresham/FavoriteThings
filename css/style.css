@@ -202,12 +202,15 @@ iframe {
 #nav-trout {
   display: block;
   margin-top: .25em; }
-
+.top-img {
+  padding-top: 1em;
+}
 .tr-jumbo {
   background-image: url("../img/jumbo-trout.jpg");
   background-position: center;
   max-width: 960px;
-  margin: auto; }
+  margin: auto; 
+  margin-bottom: 2em; }
 
 .thumbnail, .thumbnail-bug {
   margin: 0;
@@ -230,7 +233,7 @@ iframe {
   padding: 0 3em; }
 
 .habitat-btn {
-  margin: .5em 0; }
+  margin: .5em 0 2em 0; }
 
 .map {
   margin: 1.5em 0 1em 0;
@@ -250,12 +253,17 @@ iframe {
   border-radius: 0 0 0.5em 0.5em;
   background-color: #555; }
 
+.caption {
+  margin: .5em 0;}
+
 .insect-info {
   display: none;
   max-width: 20em; }
-
+.sectionl {
+  margin-top: 1em; }
 .space {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  margin-top: 1em; }
 
 .trl-bot {
   margin-bottom: 1em; }

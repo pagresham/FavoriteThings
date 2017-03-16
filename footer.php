@@ -18,14 +18,6 @@ include "login-modal.php";
 						<li >
 							<a class="trans" href="https://twitter.com/pierceanson"><img src="img/twitter-icon.png"></a>
 						</li>
-						<!-- <li >
-							<a class="trans" href="https://twitter.com/pierceanson"><img src="img/twitter-icon.png"></a>
-						</li> -->
-						<!-- <li>
-							<a href="https://www.linkedin.com/in/piercegresham/">
-		  					<img src="img/twitter-icon.png">
-							</a>
-						</li> -->
 					</ul>
 				</li>
 
