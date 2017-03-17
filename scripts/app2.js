@@ -77,10 +77,6 @@ $(function() {
 	$('[data-toggle="popover"]').popover(); 
 
 
-<<<<<<< HEAD
-=======
-	
->>>>>>> d524d71a27e932d0d233b9c8ff20510e4d0e1933
 
 	// Probalby remove this to submit assignment
 	// When ran from a server, this function returns results from a file
