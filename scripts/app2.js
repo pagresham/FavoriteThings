@@ -77,6 +77,10 @@ $(function() {
 	$('[data-toggle="popover"]').popover(); 
 
 
+<<<<<<< HEAD
+=======
+	
+>>>>>>> d524d71a27e932d0d233b9c8ff20510e4d0e1933
 
 	// Probalby remove this to submit assignment
 	// When ran from a server, this function returns results from a file
@@ -111,11 +115,27 @@ $(function() {
 	});
 
 	// Listener for 'love trout' button 
-	$('#trl-btn').click(function(){
-		($('.trl-hid').css('display') == 'none') ? $('.trl-hid').fadeIn() : $('.trl-hid').fadeOut();
+	// $('#trl-btn').click(function(){
+	// 	($('.trl-hid').css('display') == 'none') ? $('.trl-hid').fadeIn() : $('.trl-hid').fadeOut();
 		
-		$('#fish').toggleClass('fly');
+	// 	$('#fish').toggleClass('fly');
+	// });
+
+	//$('#fish').css('background-color', 'red');
+	var btn = $('#trl-btn');
+	var fishy = $('#fishy');
+	btn.click(function() {
+
+		// var len = fishy.css("width");
+		// len = Math.floor(len.substr(0, len.length - 2));
+		//alert(len);
+		
+
+		
+		$('#fishy').animate({marginLeft: "400px"}, 1000).animate({marginLeft: "0px"}, 1000)
+		.animate({marginLeft: "5000px"}, 1000);
 	});
+
 
 	
 

@@ -1,4 +1,8 @@
+
 $(function(){
+
+
+  
   // -- Start Habitat Map -- //
   
   var rioGrand = {
@@ -67,5 +71,10 @@ $(function(){
     initMap(locations[2]);
     });
 
+
 });
   
+
+  
+
+

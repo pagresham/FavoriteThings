@@ -195,7 +195,7 @@ include "header.php";
             </a>
           </div>
           <div class="insect-info col-sm-12 center" id="stone-info">
-            <p>With over 600 species, stoneflies come in a range of sizes and colors. These primitive aquatic insects are distant cousins to the cockroach.</p>
+            <p>aaaaWith over 600 species, stoneflies come in a range of sizes and colors. These primitive aquatic insects are distant cousins to the cockroach.</p>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@ include "header.php";
     <div class="row">
       <div class="col-sm-12">
        <div class="flying-fish" id="fish">
-         <img height="100px" src="img/trout.png">
+         <img id="fishy" height="100px" src="img/trout.png">
       </div>
       <div class="trl-top center">
         <h2 class="trl-hid">So Do We!!!</h2>
