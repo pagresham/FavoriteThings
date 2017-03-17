@@ -180,7 +180,7 @@ include "header.php";
           <input class="btn btn-success" type="button" value="See More" id="ind-fam-show"></input>
         </div>  
       </div>
-      <div id="map"></div>
+      <!-- <div id="map"></div> -->
       
       <!-- <div class="col-md-4">
         

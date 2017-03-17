@@ -1,7 +1,7 @@
 <?PHP
 include "header.php";
 ?>
-
+<script type="text/javascript" src="scripts/app2.map.js"></script>
 <!-- Begin collapsable navbar -->
 <!-- Add a brand image, or/and an image in the middle of the nav if wanted -->
 
