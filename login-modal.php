@@ -1,3 +1,6 @@
+
+
+
 <div class="container">
   
   <!-- Modal -->
@@ -14,7 +17,7 @@
           <form role="form">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email" required>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter Username" required>
             </div>
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>

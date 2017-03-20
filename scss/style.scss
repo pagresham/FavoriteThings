@@ -133,10 +133,9 @@ h4 {
 
   .small-center {
     text-align: center; }
-
-  .small-center a {
-    dislplay: block;
-    margin: auto; } }
+    .small-center a {
+      dislplay: block;
+      margin: auto; } }
 .center {
   text-align: center;
   margin: auto; }
@@ -203,15 +202,14 @@ iframe {
 #nav-trout {
   display: block;
   margin-top: .25em; }
-
 .top-img {
-  padding-top: 1em; }
-
+  padding-top: 1em;
+}
 .tr-jumbo {
   background-image: url("../img/jumbo-trout.jpg");
   background-position: center;
   max-width: 960px;
-  margin: auto;
+  margin: auto; 
   margin-bottom: 2em; }
 
 .thumbnail, .thumbnail-bug {
@@ -256,15 +254,13 @@ iframe {
   background-color: #555; }
 
 .caption {
-  margin: .5em 0; }
+  margin: .5em 0;}
 
 .insect-info {
   display: none;
   max-width: 20em; }
-
 .sectionl {
   margin-top: 1em; }
-
 .space {
   padding-bottom: 2em;
   margin-top: 1em; }
@@ -274,10 +270,9 @@ iframe {
 
 .trl-top {
   min-height: 4em; }
-
-.trl-top h2 {
-  margin: 0;
-  padding: 0; }
+  .trl-top h2 {
+    margin: 0;
+    padding: 0; }
 
 .trl-hid {
   display: none; }
@@ -305,6 +300,7 @@ iframe {
   100% {
     left: -100%;
     transform: rotateY(0deg); } }
+
 .bottom {
   min-height: 23em;
   background-color: #bbb; }
@@ -314,15 +310,13 @@ iframe {
 
 .form-group input[type=text] {
   /*width: 50%;*/
-  /*background-color: grey;*/ }
-
+  /*background-color: grey;*/
+}
 .reg-jumbo {
-  background-image: url("../img/snowpic.jpg");
+  background-image: url('../img/snowpic.jpg');
   background-position: center 30%;
   background-repeat: no-repeat;
   height: 10em; }
 
 .successText {
   color: darkgreen; }
-
-/*# sourceMappingURL=style.css.map */

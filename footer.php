@@ -1,6 +1,6 @@
 <?PHP
-include "register-modal.php";
-include "login-modal.php";
+// include "register-modal.php";
+// include "login-modal.php";
 ?>
 
 <footer footer-nav>

@@ -1,5 +1,6 @@
 <?PHP
 include "header.php";
+$loginMessage = "";
 ?>
 
 <!-- Begin collapsable navbar -->
@@ -29,9 +30,18 @@ include "header.php";
 			</ul>
 			<ul class="nav navbar-nav navbar-right hov-green">
 
-				<li><a href="#" id="rmodal-btn"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a></li>
+				
+        <li>
+          <a href="register.php"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a>
+        </li>
+
+        <!-- This li activated a bootstrap modal -->
+        <!-- <li><a href="#" id="rmodal-btn"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a></li> -->
 				<!-- Trigger the modal with a button -->
-        <li><a href="#" class="sans" id="lmodal-btn"><span class="glyphicon glyphicon-log-in glyph-space-right"></span><span class="sans">LogIn</span></a></li>
+        
+
+
+        <li><a href="login.php" class="sans" id="login"><span class="glyphicon glyphicon-log-in glyph-space-right"></span><span class="sans">LogIn</span></a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Drop Content <span class="caret"></span></a>
           
@@ -49,7 +59,9 @@ include "header.php";
 
 <!-- End NavBar -->
 
-
+<?PHP
+//print "$loginMessage";
+?>
 <div class="container">
   <div class="row content-top-row">
       <div class="row">
