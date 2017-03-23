@@ -10,4 +10,5 @@ if(mysqli_connect_errno()) {
 else {
 	$connect_message =  "<h1 style='color:red;'>no con er</h1><br>";
 }
+
 ?>

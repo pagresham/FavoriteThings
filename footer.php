@@ -3,33 +3,34 @@
 // include "login-modal.php";
 ?>
 
-<footer footer-nav>
+<footer class="footer-nav">
 	<nav class="navbar navbar-default bot-nav">	
 
 
 		<div class="container">
-			<ul class="nav navbar-nav navbar-left">
+			<ul class="nav navbar-nav navbar-left hov-green2">
 				
 				<li class="dropup small-center">
-					<button id="white-btn" type="button" class="btn white dropdown-toggle navbar-btn" data-toggle="dropdown">Links<span class="glyphicon glyphicon-triangle-right glyph-space-left" id="sp"></span></button>
+					
+
+					<a class="dropdown-toggle" data-toggle="dropdown">Links
+						<span class="glyphicon glyphicon-triangle-right glyph-space-left" id="sp"></span>
+					</a>
 					<ul class="dropdown-menu footer-up">
-						<li><a href="https://www.facebook.com/piercegresham"><img src="img/fb-icon.png"></a>
+						<li><a href="https://www.facebook.com/piercegresham"><img src="img/fb-icon.png" alt="Facebook Link"></a>
 						</li>
 						<li >
-							<a class="trans" href="https://twitter.com/pierceanson"><img src="img/twitter-icon.png"></a>
+							<a class="trans" href="https://twitter.com/pierceanson"><img src="img/twitter-icon.png" alt="Twitter Link"></a>
 						</li>
 					</ul>
 				</li>
 
 			</ul>
-			<ul class="nav navbar-nav navbar-right" >
-				
+			<ul class="nav navbar-nav navbar-right hov-green2" >
 				<li class="small-center">
-					<button type="button" class="btn btn-green navbar-btn">
-						<a href="#" class="white">
-							<span class="glyphicon glyphicon-send glyph-space-right"></span>Contact Us
-						</a>
-					</button>
+					<a href="#" class="">
+						<span class="glyphicon glyphicon-send glyph-space-right"></span>Contact Us
+					</a>
 				</li>
 			</ul>
 		</div>

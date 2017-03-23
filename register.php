@@ -10,13 +10,19 @@
  * 7. Check for errors again, if none, set valid = true
  * 8. If false, display form
  */
-
-include "header.php";
-require("includes/config.php");
-require("includes/connect.php");
+session_start();
 
 $validInputs = false; 
 $username = $email = $password1 = $password2 = $loginMessage = '';
+
+include "authentication.php";
+include "header.php";
+include "nav_bar.php";
+require("includes/config.php");
+require("includes/connect.php");
+
+
+
 $errors = array();
 
 // Reset post array and form fields on Reset btn
@@ -36,7 +42,7 @@ if (isset($_POST['register'])){
     }
   }
   else {
-    $errors['username'] = "Please enter a valid Username";
+    $errors['username'] = "Username is required to Login";
   }
   
   if(!empty($_POST['email'])) {
@@ -112,7 +118,9 @@ if (isset($_POST['register'])){
         }
         else {
           // User gets link to go to login page.
-          $loginMessage = "<p class='successText'><a href=\"login.php?username=$username\"><button class='btn btn-info'>Login</button></a>  Thank you for registering.</p>";
+          $loginMessage = "<p class='successText'><a href='login.php'><button type='button' class='btn btn-success'>Login</button></a>
+             Thank you for registering!</p>";
+
           // echo "<p>Thank you for registering. Please <a href=\"login.php?username=$username\">login.</a></p>";  
         unset($_POST);
 
@@ -129,52 +137,7 @@ if (!$validInputs) {
 
 
 ?>
-<!-- Start Nav Bar -->
-<nav class="navbar navbar-default top-nav">
-	<div class="container" >
-		
-	    <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
-				<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span> 
-			</button>
-	      	<a class="navbar-brand"  href="#" id="brand">myFavoriteThings</a>
-		</div>
-		<div class="collapse navbar-collapse" id="my-navbar">
-				
-		    <ul class="nav navbar-nav hov-green">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="#">Tunes</a></li>
-				
-				<!-- <li class="show"><a href="fishing.php">Fish Fun</a></li> -->
-		        <li><a href="trout.php">Trout</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right hov-green">
-		    	<li class="active2">
-		      	<a href="register.php"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a>
-		        </li>
 
-		        <!-- This li activated a bootstrap modal -->
-		        <!-- <li><a href="#" id="rmodal-btn"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a></li> -->
-						<!-- Trigger the modal with a button -->
-
-				<li><a href="login.php" class="sans" id="login"><span class="glyphicon glyphicon-log-in glyph-space-right"></span><span class="sans">LogIn</span></a></li>
-				<li class="dropdown">
-		      		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Drop Content <span class="caret"></span></a>
-		      
-		      		<ul class="dropdown-menu">
-		            	<li><a href="#">drop page 1</a></li>
-			            <li><a href="#">drop page 2</a></li>
-			            <li><a href="#">drop page 3</a></li>
-		            </ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<!-- End Nav Bar -->
 
 <div class="container">
 	<div class="row">
@@ -191,7 +154,7 @@ if (!$validInputs) {
 				<div class="form-group">
 	              <label class="control-label col-sm-2" for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
 					<div class="col-sm-10">
-	      				<input type="text" class="form-control" name="username" id="usrname" placeholder="Enter Username" value="<?PHP echo (isset($_POST['username']) ? $_POST['username'] : "") ?>"  required >
+	      				<input type="text" class="form-control" name="username" id="usrname" placeholder="Enter Username" value="<?PHP echo (isset($_POST['username']) ? $_POST['username'] : "") ?>" maxlength="45" required >
 	      				<small class="errorText"><?PHP echo array_key_exists('username', $errors) ? $errors['username'] : '' ?></small>		
 	    			</div>					
             	</div>
@@ -199,7 +162,7 @@ if (!$validInputs) {
 	            <div class="form-group">
 	              	<label class="control-label col-sm-2" for="email"><span class="glyphicon glyphicon-user"></span> Email</label>	              
 					<div class="col-sm-10">
-	      				<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?PHP echo (isset($_POST['email']) ? $_POST['email'] : '') ?>" required>
+	      				<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?PHP echo (isset($_POST['email']) ? $_POST['email'] : '') ?>" maxlength="60" required>
 	      				<small class="errorText"><?PHP echo array_key_exists('email', $errors) ? $errors['email'] : '' ?></small>
 	    			</div>
 	            </div>
@@ -207,7 +170,7 @@ if (!$validInputs) {
 	            <div class="form-group">
 	                <label class="control-label col-sm-2" for="psw1"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
 					<div class="col-sm-10">
-	      				<input type="password" class="form-control" name="password1" id="psw1" placeholder="Enter password"required>
+	      				<input type="password" class="form-control" name="password1" id="psw1" placeholder="Enter password" maxlength="45" required>
 	      				<small class="errorText"><?PHP echo array_key_exists('password1', $errors) ? $errors['password1'] : '' ?></small>
 	    			</div>
 	            </div>

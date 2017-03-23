@@ -1,60 +1,19 @@
 <?PHP
+session_start();
+
+$username = "";
+
+include "authentication.php";
 include "header.php";
+include "nav_bar.php";
+
+
+if(!isLoggedIn()) {
+  print "here is the login in link";
+}
+else {
+  print "<script type='text/javascript' src='scripts/app2.map.js'></script>";
 ?>
-<script type="text/javascript" src="scripts/app2.map.js"></script>
-<!-- Begin collapsable navbar -->
-<!-- Add a brand image, or/and an image in the middle of the nav if wanted -->
-
-<nav class="navbar navbar-default">
-  <div class="container">
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a href="#" id="nav-trout"><img height="45px" src="img/trout.png"></a>
-      <!-- <a class="navbar-brand" href="#">MyFavoriteThings</a> -->
-    </div>
-    
-    <div class="collapse navbar-collapse" id="my-navbar">
-      
-      <ul class="nav navbar-nav hov-green">
-        <li class=""><a href="index.php">Home</a></li>
-        <li><a href="#" >Tunes</a></li>
-        <li class="show active2"><a href="trout.php">Trout</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right hov-green">
-        
-        <li>
-          <a href="register.php"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a>
-        </li>
-        
-
-
-        <!-- <li><a href="#" id="rmodal-btn"><span class="glyphicon glyphicon-user glyph-space-right"></span><span class="sans">SignUp</span></a></li> -->
-        <!-- Trigger the modal with a button -->
-        
-
-        <li><a href="login.php" class="sans" id="login"><span class="glyphicon glyphicon-log-in glyph-space-right"></span><span class="sans">LogIn</span></a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Drop Content <span class="caret"></span></a>
-          
-          <ul class="dropdown-menu">
-            <li><a href="#">drop page 1</a></li>
-            <li><a href="#">drop page 2</a></li>
-            <li><a href="#">drop page 3</a></li>
-          </ul>
-        
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- End NavBar -->
 
 <!-- Jumbotron -->
 <section class="container">
@@ -233,6 +192,7 @@ include "header.php";
 
 
 <?PHP
+}
 include "footer.php";
 include "register-modal.php";
 include "login-modal.php";

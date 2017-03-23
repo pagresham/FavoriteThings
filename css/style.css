@@ -22,6 +22,12 @@ li:disabled a {
 .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover {
   color: black; }
 
+.navbar, .top-nav {
+  margin-bottom: 0; }
+
+.content-top-row {
+  margin-top: 1em; }
+
 .page {
   max-width: 1200px;
   overflow: hidden;
@@ -29,9 +35,6 @@ li:disabled a {
 
 .content {
   margin: 1em 0; }
-
-.content-top-row div {
-  margin-bottom: 1em; }
 
 .music, .fishing, .family {
   min-height: 200px;
@@ -42,7 +45,7 @@ h4 {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  width: 70%;
+  width: 100%;
   margin: auto; }
 
 #jumbo-img-ind {
@@ -72,6 +75,8 @@ h4 {
 
 .active2 {
   font-weight: 900; }
+  .active2 a {
+    color: green; }
 
 .white {
   color: white;
@@ -103,6 +108,16 @@ h4 {
 .footer-up {
   position: absolute; }
 
+.hov-green2 li:hover {
+  background-color: #7d9b82;
+  animation: fade-to-green2 .5s 1; }
+
+@keyframes fade-to-green2 {
+  from {
+    background-color: #222;
+    background: linear-gradient(#555, #222); }
+  to {
+    background-color: #7d9b82; } }
 .footer-up li {
   position: relative;
   left: 130px;
@@ -116,10 +131,6 @@ h4 {
   color: #7d9b82; }
 
 .btn-green {
-  background-color: #7d9b82; }
-
-#white-btn {
-  color: white;
   background-color: #7d9b82; }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {

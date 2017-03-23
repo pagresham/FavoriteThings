@@ -20,11 +20,6 @@ include "header.php";
 				<li class="active2"><a href="index.php">Home</a></li>
 				<li><a href="cnt1.php">Content 1</a></li>
 				<li class="show"><a href="cnt2.php">Content</a></li>
-				
-
-        
-
-
 			</ul>
 			<ul class="nav navbar-nav navbar-right hov-green">
 
