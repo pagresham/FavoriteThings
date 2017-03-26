@@ -19,6 +19,8 @@
 <body>
 
 <!-- Start Header -->
-<div class="page">
-<header class="header">
+<div id="container">
+<!-- Start Header div -->
+<div id="header">
+<header>
 </header>

@@ -15,7 +15,8 @@ function isLoggedIn() {
 function logOut(){
 	if(isset($_SESSION['username'])) {
 		unset($_SESSION['username']);  // clear the session var for user-name
+		print "<p>You are currently logged out. Please use this link to <a href='login.php'>Login</a>.</p>";
 	}
-	print "<p>You are currently logged out. Please use this link to <a href='login.php'>Login</a>.</p>";
+	
 }
 ?>

@@ -139,7 +139,7 @@ if (!$validInputs) {
 ?>
 
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="jumbotron reg-jumbo col-sm-12">
 			<!-- <h2>Create an account</h2> -->

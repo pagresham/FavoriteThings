@@ -9,11 +9,17 @@ include "nav_bar.php";
 
 
 if(!isLoggedIn()) {
-  print "here is the login in link";
+  print "";
+  print "<div class='inside'><div class='logMsg'>Please <a href='login.php'>login</a> to view the contents of this page</div>
+  </div>";
 }
 else {
   print "<script type='text/javascript' src='scripts/app2.map.js'></script>";
 ?>
+
+
+
+
 
 <!-- Jumbotron -->
 <section class="container">
@@ -163,7 +169,7 @@ else {
             </a>
           </div>
           <div class="insect-info col-sm-12 center" id="stone-info">
-            <p>aaaaWith over 600 species, stoneflies come in a range of sizes and colors. These primitive aquatic insects are distant cousins to the cockroach.</p>
+            <p>With over 600 species, stoneflies come in a range of sizes and colors. These primitive aquatic insects are distant cousins to the cockroach.</p>
           </div>
         </div>
       </div>

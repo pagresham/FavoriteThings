@@ -114,25 +114,45 @@ $(function() {
 	// $('#trl-btn').click(function(){
 	// 	($('.trl-hid').css('display') == 'none') ? $('.trl-hid').fadeIn() : $('.trl-hid').fadeOut();
 		
-	// 	$('#fish').toggleClass('fly');
+	
 	// });
 
 	//$('#fish').css('background-color', 'red');
 	var btn = $('#trl-btn');
 	var fishy = $('#fishy');
+	var hasClass = false;
 	btn.click(function() {
-
-		// var len = fishy.css("width");
-		// len = Math.floor(len.substr(0, len.length - 2));
-		//alert(len);
+			($('.trl-hid').css('display') == 'none') ? $('.trl-hid').fadeIn() : $('.trl-hid').fadeOut();
+		if (hasClass === false) {
+			$('#fishy').animate({marginLeft: "+=2000px"}, 2000);
+			$('#fishy').addClass('fly').removeClass('fly2');
+			
+			//alert('add fly, rem fly2');
+			hasClass = true;
+		}
+		else {
+			$('#fishy').animate({marginLeft: "-=2000px"}, 2000);
+			$('#fishy').addClass('fly2').removeClass('fly');
+			
+			//alert('add fly2, rem fly')
+			hasClass = false;
+		}
 		
-
-		
-		$('#fishy').animate({marginLeft: "400px"}, 1000).animate({marginLeft: "0px"}, 1000)
-		.animate({marginLeft: "5000px"}, 1000);
+		// $('#fishy').animate({
+		// 	margin: "500px"
+		// },1000);
+		//$('#fishy').animate({marginLeft: "400px"}, 1000).animate({marginLeft: "0px"}, 1000);
 	});
 
-
+	// Border effect on hover
+	// $('.logMsg').mouseenter(function(){
+		
+	// 	$('.logMsg').css('border', '1px solid black')
+	// });
+	// $('.logMsg').mouseleave(function(){
+		
+	// 	$('.logMsg').css('border', 'none');
+	// })
 	
 
 });
