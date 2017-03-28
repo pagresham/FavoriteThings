@@ -76,6 +76,7 @@ if(isset($_POST['login'])) {
 				//print "set settion username and it is ".$_SESSION['username']." ".$username;
 				//print "<p>password is correct</p><br>";
 				$successMessage = "<p>Please visit our site at: <a href='index.php'>myFavoriteThings</a></p>";
+				header('Location: login.php');
 				
 			}
 			else {
@@ -142,7 +143,12 @@ if (isLoggedIn()) {
 						if(!empty($logOutMessage)) {
 							print "<button type='submit' name='logOut' class='btn btn-success' id='login' formnovalidate><span class='glyphicon glyphicon-off'></span> LogOut</button>	";
 						}
+						if (!isLoggedIn()) {
+						?>
+							<button type="button" onclick="window.location ='register.php'" class="btn btn-success" id="createAccount">Create Account</button>
 
+						<?PHP
+						}
 						?>
 					</div>
 					

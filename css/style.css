@@ -266,6 +266,9 @@ iframe {
   padding-top: 1em; }
 
 .tr-jumbo {
+  background-repeat: no-repeat;
+  height: 10em;
+  background-color: transparent;
   background-image: url("../img/jumbo-trout.jpg");
   background-position: center;
   max-width: 960px;
