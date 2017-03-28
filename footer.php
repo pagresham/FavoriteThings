@@ -1,6 +1,5 @@
 <?PHP
-// include "register-modal.php";
-// include "login-modal.php";
+
 ?>
 <!-- End #body -->
 </div>
@@ -16,7 +15,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right hov-green2" >
 				<li class="small-center">
-					<a href="#" class="">
+					<a href="contact.php" class="">
 						<span class="glyphicon glyphicon-send glyph-space-right"></span>Contact Us
 					</a>
 				</li>

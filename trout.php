@@ -200,6 +200,4 @@ else {
 <?PHP
 }
 include "footer.php";
-include "register-modal.php";
-include "login-modal.php";
 ?>
