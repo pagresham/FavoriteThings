@@ -26,7 +26,7 @@ if(isLoggedIn()) {
 				
         <li <?PHP print (strpos($_SERVER['PHP_SELF'], '/index.php')) ? "class='active2'" : "" ?>><a href="index.php">Home</a></li>
         
-        <li <?PHP print (strpos($_SERVER['PHP_SELF'], '/tunes.php')) ? "class='active2'" : "" ?> ><a href="#">Tunes</a></li>
+        <!-- <li <?PHP //print (strpos($_SERVER['PHP_SELF'], '/tunes.php')) ? "class='active2'" : "" ?> ><a href="#">Tunes</a></li> -->
 				
         <li <?PHP print (strpos($_SERVER['PHP_SELF'], '/trout.php')) ? "class='active2'" : "" ?> ><a href="trout.php">Trout</a></li>
         			
