@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- meta tag for some easy SEO -->
+	
+	
+
+
+
 	<title>Fun with Fish</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">

@@ -122,7 +122,7 @@ if (isset($_POST['register'])){
              Thank you for registering!</p>";
 
           // echo "<p>Thank you for registering. Please <a href=\"login.php?username=$username\">login.</a></p>";  
-        unset($_POST);
+            unset($_POST);
 
 
         }
